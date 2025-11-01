@@ -45,7 +45,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            padding: 4rem;
+            padding: 2rem;
             background: linear-gradient(135deg, #0A0E27 0%, #1a1f3a 100%);
             position: relative;
             overflow: hidden;
@@ -70,49 +70,49 @@
         .book-container {
             position: relative;
             z-index: 2;
-            width: 280px;
-            height: 400px;
+            width: 240px;
+            height: 340px;
             background: linear-gradient(135deg, var(--primary-blue) 0%, #0052CC 100%);
-            border-radius: 12px;
+            border-radius: 10px;
             box-shadow:
-                0 25px 50px rgba(0, 102, 255, 0.3),
-                0 0 100px rgba(0, 102, 255, 0.2);
-            padding: 2.5rem 2rem;
+                0 20px 40px rgba(0, 102, 255, 0.3),
+                0 0 80px rgba(0, 102, 255, 0.2);
+            padding: 2rem 1.5rem;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            margin-bottom: 2rem;
+            margin-bottom: 1.5rem;
             transition: transform 0.3s ease;
         }
 
         .book-container:hover {
-            transform: translateY(-10px) rotateY(5deg);
+            transform: translateY(-8px) rotateY(5deg);
         }
 
         .book-title {
-            font-size: 2rem;
+            font-size: 1.6rem;
             font-weight: 800;
             line-height: 1.1;
             letter-spacing: -0.02em;
         }
 
         .book-subtitle {
-            font-size: 0.9rem;
+            font-size: 0.8rem;
             opacity: 0.9;
             font-weight: 300;
-            margin-top: 0.5rem;
+            margin-top: 0.4rem;
         }
 
         .book-author {
-            font-size: 1.1rem;
+            font-size: 0.95rem;
             font-weight: 600;
             opacity: 0.95;
         }
 
         .stats-container {
             display: flex;
-            gap: 2rem;
-            margin-top: 1.5rem;
+            gap: 1.5rem;
+            margin-top: 1rem;
             z-index: 2;
         }
 
@@ -121,14 +121,14 @@
         }
 
         .stat-number {
-            font-size: 2rem;
+            font-size: 1.6rem;
             font-weight: 700;
             color: var(--primary-blue);
             display: block;
         }
 
         .stat-label {
-            font-size: 0.75rem;
+            font-size: 0.65rem;
             opacity: 0.6;
             text-transform: uppercase;
             letter-spacing: 0.1em;
@@ -139,17 +139,19 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            padding: 4rem;
-            gap: 2rem;
+            padding: 2.5rem 3rem;
+            gap: 1.2rem;
+            position: relative;
+            overflow: hidden;
         }
 
         .badge {
             display: inline-block;
-            padding: 0.5rem 1rem;
+            padding: 0.4rem 0.8rem;
             background: rgba(0, 102, 255, 0.1);
             border: 1px solid rgba(0, 102, 255, 0.3);
             border-radius: 50px;
-            font-size: 0.75rem;
+            font-size: 0.65rem;
             font-weight: 600;
             letter-spacing: 0.1em;
             text-transform: uppercase;
@@ -158,7 +160,7 @@
         }
 
         h1 {
-            font-size: 3.5rem;
+            font-size: 2.8rem;
             font-weight: 800;
             line-height: 1.1;
             letter-spacing: -0.02em;
@@ -173,46 +175,47 @@
         }
 
         .description {
-            font-size: 1.1rem;
-            line-height: 1.6;
+            font-size: 0.95rem;
+            line-height: 1.5;
             opacity: 0.8;
             font-weight: 300;
-            max-width: 600px;
+            max-width: 550px;
         }
 
         .features {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 1rem;
-            margin: 1rem 0;
+            gap: 0.6rem;
+            margin: 0.5rem 0;
         }
 
         .feature {
             display: flex;
             align-items: center;
-            gap: 0.75rem;
-            font-size: 0.9rem;
+            gap: 0.6rem;
+            font-size: 0.8rem;
             opacity: 0.9;
         }
 
         .feature-icon {
-            width: 6px;
-            height: 6px;
+            width: 5px;
+            height: 5px;
             background: var(--primary-blue);
             border-radius: 50%;
+            flex-shrink: 0;
         }
 
         .cta-container {
             display: flex;
-            gap: 1rem;
-            margin-top: 1rem;
+            gap: 0.8rem;
+            margin-top: 0.8rem;
         }
 
         .btn {
-            padding: 1rem 2rem;
+            padding: 0.85rem 1.6rem;
             border-radius: 8px;
             font-weight: 600;
-            font-size: 1rem;
+            font-size: 0.9rem;
             cursor: pointer;
             transition: all 0.3s ease;
             border: none;
@@ -220,7 +223,7 @@
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            gap: 0.5rem;
+            gap: 0.4rem;
         }
 
         .btn-primary {
@@ -246,29 +249,29 @@
         }
 
         .price {
-            font-size: 0.9rem;
+            font-size: 0.8rem;
             opacity: 0.7;
-            margin-top: 0.5rem;
+            margin-top: 0.3rem;
         }
 
         .author-tag {
             display: flex;
             align-items: center;
-            gap: 1rem;
-            margin-top: 2rem;
-            padding-top: 2rem;
+            gap: 0.8rem;
+            margin-top: 1rem;
+            padding-top: 1rem;
             border-top: 1px solid var(--border-color);
         }
 
         .author-avatar {
-            width: 48px;
-            height: 48px;
+            width: 40px;
+            height: 40px;
             border-radius: 50%;
             background: linear-gradient(135deg, var(--primary-blue) 0%, var(--light-red) 100%);
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.5rem;
+            font-size: 1.2rem;
         }
 
         .author-info {
@@ -277,35 +280,35 @@
 
         .author-name {
             font-weight: 600;
-            font-size: 1rem;
-            margin-bottom: 0.25rem;
+            font-size: 0.9rem;
+            margin-bottom: 0.2rem;
         }
 
         .author-title {
-            font-size: 0.85rem;
+            font-size: 0.75rem;
             opacity: 0.6;
         }
 
         /* Decorative Elements */
         .glow-orb {
             position: absolute;
-            width: 400px;
-            height: 400px;
+            width: 350px;
+            height: 350px;
             border-radius: 50%;
             filter: blur(100px);
-            opacity: 0.3;
+            opacity: 0.25;
             pointer-events: none;
         }
 
         .glow-orb-1 {
-            top: -200px;
-            right: -200px;
+            top: -175px;
+            right: -175px;
             background: var(--primary-blue);
         }
 
         .glow-orb-2 {
-            bottom: -200px;
-            left: -200px;
+            bottom: -175px;
+            left: -175px;
             background: var(--light-red);
         }
 
@@ -322,7 +325,7 @@
             }
 
             h1 {
-                font-size: 2.5rem;
+                font-size: 2.2rem;
             }
 
             .features {
@@ -337,14 +340,14 @@
         <div class="left-panel">
             <div class="book-container">
                 <div>
-                    <div style="font-size: 0.7rem; opacity: 0.8; letter-spacing: 0.2em; margin-bottom: 1.5rem;">EDUCATIONAL LEADERSHIP</div>
+                    <div style="font-size: 0.65rem; opacity: 0.8; letter-spacing: 0.2em; margin-bottom: 1.2rem;">EDUCATIONAL LEADERSHIP</div>
                     <div class="book-title">The Fourth Industrial Superintendent</div>
                     <div class="book-subtitle">Leading Schools Into the AI Age</div>
                 </div>
                 <div>
-                    <div style="font-size: 0.7rem; opacity: 0.8; margin-bottom: 0.5rem;">BY</div>
+                    <div style="font-size: 0.65rem; opacity: 0.8; margin-bottom: 0.4rem;">BY</div>
                     <div class="book-author">Dr. Marie Martin, EdD</div>
-                    <div style="font-size: 0.75rem; opacity: 0.7; margin-top: 0.25rem;">25+ Years Educational Leadership</div>
+                    <div style="font-size: 0.7rem; opacity: 0.7; margin-top: 0.2rem;">25+ Years Leadership</div>
                 </div>
             </div>
 
@@ -377,8 +380,7 @@
             </h1>
 
             <p class="description">
-                A comprehensive guide for superintendents navigating the Fourth Industrial Revolution.
-                Transform your district with AI-powered strategies, proven frameworks, and ready-to-use templates.
+                A comprehensive guide for superintendents navigating the Fourth Industrial Revolution. Transform your district with AI-powered strategies, proven frameworks, and ready-to-use templates.
             </p>
 
             <div class="features">
@@ -388,23 +390,23 @@
                 </div>
                 <div class="feature">
                     <div class="feature-icon"></div>
-                    <span>Teacher Development Programs</span>
+                    <span>Teacher Development</span>
                 </div>
                 <div class="feature">
                     <div class="feature-icon"></div>
-                    <span>Policy & Governance Frameworks</span>
+                    <span>Policy & Governance</span>
                 </div>
                 <div class="feature">
                     <div class="feature-icon"></div>
-                    <span>Budget Planning Tools</span>
+                    <span>Budget Planning</span>
                 </div>
                 <div class="feature">
                     <div class="feature-icon"></div>
-                    <span>90-Day Implementation Roadmap</span>
+                    <span>90-Day Roadmap</span>
                 </div>
                 <div class="feature">
                     <div class="feature-icon"></div>
-                    <span>Board Presentation Templates</span>
+                    <span>Board Templates</span>
                 </div>
             </div>
 
@@ -419,14 +421,14 @@
             </div>
 
             <div class="price">
-                Book: $47 one-time • Academy: $97/month • Cancel anytime
+                $47 one-time • $97/month • Cancel anytime
             </div>
 
             <div class="author-tag">
                 <div class="author-avatar">👩‍🎓</div>
                 <div class="author-info">
                     <div class="author-name">Dr. Marie Martin, EdD</div>
-                    <div class="author-title">Educational Leadership Consultant • Alexandria's Design</div>
+                    <div class="author-title">Alexandria's Design</div>
                 </div>
             </div>
         </div>
