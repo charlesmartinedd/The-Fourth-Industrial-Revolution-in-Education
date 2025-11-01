@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Fourth Industrial Superintendent - Dr. Marie Martin</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #60a5fa 100%);
+        }
+
+        .book-cover-shadow {
+            box-shadow:
+                0 20px 60px rgba(0, 0, 0, 0.3),
+                0 10px 30px rgba(30, 58, 138, 0.2);
+        }
+
+        .pricing-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .feature-icon {
+            background: linear-gradient(135deg, #3b82f6 0%, #60a5fa 100%);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .fade-in {
+            animation: fadeIn 0.8s ease-out;
+        }
+
+        .prototype-badge {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: rgba(239, 68, 68, 0.9);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Prototype Badge -->
+    <div class="prototype-badge">
+        PROTOTYPE DEMO
+    </div>
+
+    <!-- Hero Section -->
+    <div class="gradient-bg min-h-screen flex items-center justify-center px-4 py-20">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <!-- Left Column: Book Cover -->
+            <div class="flex justify-center fade-in">
+                <iframe src="book-cover.html" class="w-full max-w-md h-[600px] rounded-lg book-cover-shadow border-4 border-white/20"></iframe>
+            </div>
+
+            <!-- Right Column: Content -->
+            <div class="text-white space-y-8 fade-in">
+                <div class="inline-block bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-semibold">
+                    Educational Leadership • 2025 Edition
+                </div>
+
+                <h1 class="text-5xl md:text-6xl font-bold leading-tight">
+                    Lead Your District Into the AI Age
+                </h1>
+
+                <p class="text-xl text-white/90 leading-relaxed">
+                    A comprehensive guide for superintendents navigating the Fourth Industrial Revolution.
+                    Written by Dr. Marie Martin—25+ years transforming schools, districts, and government education programs.
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <button class="bg-white text-blue-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition-colors shadow-lg">
+                        Get the Book - $47
+                    </button>
+                    <button class="bg-blue-800/50 backdrop-blur-sm text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-800/70 transition-colors border-2 border-white/30">
+                        Subscribe - $97/mo
+                    </button>
+                </div>
+
+                <div class="flex items-center gap-8 text-sm">
+                    <div>
+                        <div class="font-bold text-2xl">12</div>
+                        <div class="text-white/80">Chapters</div>
+                    </div>
+                    <div>
+                        <div class="font-bold text-2xl">250+</div>
+                        <div class="text-white/80">Pages</div>
+                    </div>
+                    <div>
+                        <div class="font-bold text-2xl">50+</div>
+                        <div class="text-white/80">Templates</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- What's Inside Section -->
+    <div class="py-20 px-4 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">What You'll Learn</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Everything you need to lead your district confidently through the AI transformation
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-blue-50 p-8 rounded-xl">
+                    <div class="feature-icon w-12 h-12 rounded-lg flex items-center justify-center text-white text-2xl mb-4">
+                        🎯
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Strategic Vision</h3>
+                    <p class="text-gray-600">
+                        Create a clear AI vision for your district that inspires teachers, reassures parents, and impresses your board.
+                    </p>
+                </div>
+
+                <div class="bg-blue-50 p-8 rounded-xl">
+                    <div class="feature-icon w-12 h-12 rounded-lg flex items-center justify-center text-white text-2xl mb-4">
+                        👥
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Teacher Development</h3>
+                    <p class="text-gray-600">
+                        Design professional development that actually works—transforming fear into excitement about AI.
+                    </p>
+                </div>
+
+                <div class="bg-blue-50 p-8 rounded-xl">
+                    <div class="feature-icon w-12 h-12 rounded-lg flex items-center justify-center text-white text-2xl mb-4">
+                        📋
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Policy & Governance</h3>
+                    <p class="text-gray-600">
+                        Ready-to-use policies, board presentations, and community communication templates.
+                    </p>
+                </div>
+
+                <div class="bg-blue-50 p-8 rounded-xl">
+                    <div class="feature-icon w-12 h-12 rounded-lg flex items-center justify-center text-white text-2xl mb-4">
+                        💡
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Quick Wins</h3>
+                    <p class="text-gray-600">
+                        10 no-cost pilot programs you can launch Monday morning to build momentum and prove value.
+                    </p>
+                </div>
+
+                <div class="bg-blue-50 p-8 rounded-xl">
+                    <div class="feature-icon w-12 h-12 rounded-lg flex items-center justify-center text-white text-2xl mb-4">
+                        💰
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Budget Planning</h3>
+                    <p class="text-gray-600">
+                        Strategic budget allocation, grant opportunities, and ROI calculations that satisfy CFOs.
+                    </p>
+                </div>
+
+                <div class="bg-blue-50 p-8 rounded-xl">
+                    <div class="feature-icon w-12 h-12 rounded-lg flex items-center justify-center text-white text-2xl mb-4">
+                        🚀
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Future-Proofing</h3>
+                    <p class="text-gray-600">
+                        Prepare for what's next—from VR classrooms to AI tutors to personalized learning at scale.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pricing Section -->
+    <div class="py-20 px-4 bg-gray-100">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Choose Your Path</h2>
+                <p class="text-xl text-gray-600">
+                    Start with the book, or accelerate your transformation with monthly coaching
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <!-- Book Option -->
+                <div class="pricing-card bg-white rounded-2xl p-8 shadow-lg">
+                    <div class="text-sm font-semibold text-blue-600 mb-2">ONE-TIME PURCHASE</div>
+                    <h3 class="text-3xl font-bold text-gray-900 mb-2">The Book</h3>
+                    <div class="mb-6">
+                        <span class="text-5xl font-bold text-gray-900">$47</span>
+                        <span class="text-gray-600 ml-2">one-time</span>
+                    </div>
+
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start gap-3">
+                            <div class="text-green-500 text-xl">✓</div>
+                            <span class="text-gray-700">Complete 12-chapter book (250+ pages)</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="text-green-500 text-xl">✓</div>
+                            <span class="text-gray-700">50+ ready-to-use templates & policies</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="text-green-500 text-xl">✓</div>
+                            <span class="text-gray-700">Sample board presentations</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="text-green-500 text-xl">✓</div>
+                            <span class="text-gray-700">90-day implementation roadmap</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="text-green-500 text-xl">✓</div>
+                            <span class="text-gray-700">Budget planning tools</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="text-green-500 text-xl">✓</div>
+                            <span class="text-gray-700">Lifetime access + updates</span>
+                        </li>
+                    </ul>
+
+                    <button class="w-full bg-blue-600 text-white py-4 rounded-lg font-bold text-lg hover:bg-blue-700 transition-colors">
+                        Get the Book
+                    </button>
+
+                    <div class="text-center mt-4 text-sm text-gray-600">
+                        Perfect for self-paced learning
+                    </div>
+                </div>
+
+                <!-- Subscription Option -->
+                <div class="pricing-card bg-gradient-to-br from-blue-600 to-blue-700 rounded-2xl p-8 shadow-xl border-4 border-blue-400 relative">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-yellow-400 text-gray-900 px-6 py-2 rounded-full text-sm font-bold">
+                        BEST VALUE
+                    </div>
+
+                    <div class="text-sm font-semibold text-blue-200 mb-2">MONTHLY SUBSCRIPTION</div>
+                    <h3 class="text-3xl font-bold text-white mb-2">Leadership Academy</h3>
+                    <div class="mb-6">
+                        <span class="text-5xl font-bold text-white">$97</span>
+                        <span class="text-blue-200 ml-2">/month</span>
+                    </div>
+
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start gap-3">
+                            <div class="text-yellow-300 text-xl">✓</div>
+                            <span class="text-white font-medium">Everything in the book, PLUS:</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="text-yellow-300 text-xl">✓</div>
+                            <span class="text-white">Monthly video training (60 min)</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="text-yellow-300 text-xl">✓</div>
+                            <span class="text-white">Live group coaching calls with Dr. Marie</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="text-yellow-300 text-xl">✓</div>
+                            <span class="text-white">Private community (200+ superintendents)</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="text-yellow-300 text-xl">✓</div>
+                            <span class="text-white">New templates & resources monthly</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="text-yellow-300 text-xl">✓</div>
+                            <span class="text-white">Direct email support from Dr. Marie</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="text-yellow-300 text-xl">✓</div>
+                            <span class="text-white">Cancel anytime, no contracts</span>
+                        </li>
+                    </ul>
+
+                    <button class="w-full bg-white text-blue-600 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition-colors">
+                        Start Subscription
+                    </button>
+
+                    <div class="text-center mt-4 text-sm text-blue-200">
+                        First month satisfaction guaranteed
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sample Content -->
+    <div class="py-20 px-4 bg-white">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">See What You'll Get</h2>
+                <p class="text-xl text-gray-600">
+                    Preview actual content from the book and subscription
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <a href="content/book-chapter-1-sample.md" target="_blank" class="block bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-xl border-2 border-blue-200 hover:shadow-lg transition-shadow">
+                    <div class="text-blue-600 text-4xl mb-4">📖</div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Book: Chapter 1 Preview</h3>
+                    <p class="text-gray-700 mb-4">
+                        "The Superintendent's Moment of Truth" - Discover why some leaders thrive in transformation while others struggle.
+                    </p>
+                    <div class="text-blue-600 font-semibold">Read Sample Chapter →</div>
+                </a>
+
+                <a href="content/subscription-month-1-sample.md" target="_blank" class="block bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-xl border-2 border-blue-200 hover:shadow-lg transition-shadow">
+                    <div class="text-blue-600 text-4xl mb-4">🎓</div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Subscription: Month 1</h3>
+                    <p class="text-gray-700 mb-4">
+                        "Building Your AI Leadership Framework" - Complete module with templates, videos, and coaching calls.
+                    </p>
+                    <div class="text-blue-600 font-semibold">View Module Overview →</div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Author Section -->
+    <div class="py-20 px-4 bg-gray-900 text-white">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-4">Meet Your Guide</h2>
+            </div>
+
+            <div class="bg-gray-800 rounded-2xl p-8 md:p-12">
+                <div class="flex flex-col md:flex-row gap-8 items-start">
+                    <div class="md:w-1/3">
+                        <div class="w-48 h-48 bg-gradient-to-br from-blue-500 to-blue-700 rounded-full flex items-center justify-center text-6xl mx-auto">
+                            👩‍🎓
+                        </div>
+                    </div>
+
+                    <div class="md:w-2/3 space-y-4">
+                        <h3 class="text-3xl font-bold">Dr. Marie Martin, EdD</h3>
+                        <p class="text-xl text-gray-300">Educational Leadership Consultant</p>
+
+                        <div class="space-y-3 text-gray-300">
+                            <p>
+                                <strong class="text-white">25+ years</strong> transforming schools, districts, and government education programs across K-12, higher education, and military sectors.
+                            </p>
+
+                            <p>
+                                Former district administrator and government education specialist with deep expertise in:
+                            </p>
+
+                            <ul class="list-disc list-inside space-y-2 ml-4">
+                                <li>Strategic planning and change management</li>
+                                <li>Curriculum development and instructional design</li>
+                                <li>Educational technology integration</li>
+                                <li>Professional development at scale</li>
+                                <li>Policy and governance frameworks</li>
+                            </ul>
+
+                            <p>
+                                Co-founder of <strong class="text-white">Alexandria's Design</strong>, helping educational organizations embrace future-ready practices through AI-integrated solutions.
+                            </p>
+
+                            <p class="text-blue-300 font-semibold">
+                                "I've seen every education trend come and go. This isn't a trend—this is the future. Let me show you how to lead it."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <div class="gradient-bg py-20 px-4 text-white text-center">
+        <div class="max-w-3xl mx-auto space-y-8">
+            <h2 class="text-4xl md:text-5xl font-bold">
+                Ready to Lead the Future?
+            </h2>
+
+            <p class="text-xl text-white/90">
+                Join 200+ forward-thinking superintendents who are transforming their districts with AI.
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="bg-white text-blue-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition-colors shadow-lg">
+                    Get the Book - $47
+                </button>
+                <button class="bg-blue-800/50 backdrop-blur-sm text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-800/70 transition-colors border-2 border-white/30">
+                    Start Subscription - $97/mo
+                </button>
+            </div>
+
+            <p class="text-sm text-white/80">
+                💳 Secure payment • 📧 Instant access • 🔄 Cancel anytime
+            </p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="bg-gray-900 text-gray-400 py-12 px-4 text-center">
+        <div class="max-w-4xl mx-auto space-y-4">
+            <div class="text-2xl font-bold text-white">The Fourth Industrial Superintendent</div>
+            <p>Leading Schools Beyond the 21st Century into the Age of AI</p>
+            <p class="text-sm">© 2025 Alexandria's Design. All rights reserved.</p>
+            <div class="text-sm">
+                <a href="mailto:drcharlesmartinjr@alexandriasdesign.com" class="text-blue-400 hover:text-blue-300">
+                    drcharlesmartinjr@alexandriasdesign.com
+                </a>
+            </div>
+            <div class="pt-4 text-xs text-gray-600 border-t border-gray-800">
+                <p>🚀 This is a PROTOTYPE demonstration</p>
+                <p>Built to showcase what's possible with Alexandria's Design</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
