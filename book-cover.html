@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Cover - The Fourth Industrial Superintendent</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Source+Sans+Pro:wght@300;600&family=Montserrat:wght@600&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -12,8 +13,8 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #1a1a1a;
+            font-family: 'Source Sans Pro', sans-serif;
+            background: rgb(22, 22, 22);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -24,9 +25,11 @@
         .book-cover {
             width: 600px;
             height: 900px;
-            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #60a5fa 100%);
+            background: linear-gradient(135deg, rgb(22, 22, 22) 0%, rgb(40, 40, 40) 100%);
             border-radius: 10px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+            box-shadow:
+                0 30px 90px rgba(0, 0, 0, 0.8),
+                0 0 0 3px rgba(212, 175, 55, 0.3);
             position: relative;
             overflow: hidden;
             padding: 60px 50px;
@@ -43,8 +46,8 @@
             width: 100%;
             height: 100%;
             background:
-                radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
-                radial-gradient(circle at 80% 70%, rgba(255, 255, 255, 0.05) 0%, transparent 50%);
+                radial-gradient(circle at 20% 30%, rgba(212, 175, 55, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 80% 70%, rgba(212, 175, 55, 0.03) 0%, transparent 50%);
             pointer-events: none;
         }
 
@@ -54,44 +57,47 @@
         }
 
         .category {
-            color: rgba(255, 255, 255, 0.9);
-            font-size: 16px;
+            color: rgb(212, 175, 55);
+            font-size: 14px;
             font-weight: 600;
-            letter-spacing: 3px;
+            letter-spacing: 4px;
             text-transform: uppercase;
             margin-bottom: 40px;
-            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            font-family: 'Montserrat', sans-serif;
         }
 
         .title {
             color: white;
-            font-size: 56px;
+            font-size: 64px;
             font-weight: 800;
-            line-height: 1.1;
-            margin-bottom: 20px;
-            text-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+            line-height: 1;
+            margin-bottom: 30px;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .title-accent {
+            color: rgb(212, 175, 55);
         }
 
         .subtitle {
-            color: rgba(255, 255, 255, 0.95);
-            font-size: 24px;
-            font-weight: 400;
-            line-height: 1.4;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 22px;
+            font-weight: 300;
+            line-height: 1.5;
             margin-bottom: 30px;
-            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
         }
 
         .edition {
-            color: rgba(255, 255, 255, 0.8);
-            font-size: 18px;
-            font-weight: 500;
-            letter-spacing: 1px;
-            padding: 8px 20px;
-            background: rgba(255, 255, 255, 0.15);
-            backdrop-filter: blur(10px);
-            border-radius: 20px;
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 16px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            padding: 10px 24px;
+            background: rgba(212, 175, 55, 0.1);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            border-radius: 4px;
             display: inline-block;
-            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            font-family: 'Montserrat', sans-serif;
         }
 
         .middle-section {
@@ -100,34 +106,23 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 20px;
+            gap: 24px;
         }
 
-        .icon-container {
-            width: 120px;
-            height: 120px;
-            background: rgba(255, 255, 255, 0.15);
-            backdrop-filter: blur(10px);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-        }
-
-        .icon {
-            font-size: 60px;
-            color: white;
+        .divider {
+            width: 100px;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, rgb(212, 175, 55), transparent);
         }
 
         .tagline {
-            color: rgba(255, 255, 255, 0.9);
+            color: rgba(255, 255, 255, 0.8);
             font-size: 20px;
-            font-weight: 500;
+            font-weight: 300;
             text-align: center;
-            max-width: 400px;
-            line-height: 1.5;
-            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            max-width: 420px;
+            line-height: 1.6;
+            letter-spacing: 0.5px;
         }
 
         .bottom-section {
@@ -137,19 +132,19 @@
 
         .author {
             color: white;
-            font-size: 28px;
+            font-size: 32px;
             font-weight: 700;
-            letter-spacing: 1px;
-            text-shadow: 0 3px 15px rgba(0, 0, 0, 0.4);
+            letter-spacing: 0.5px;
+            font-family: 'Playfair Display', serif;
+            margin-bottom: 8px;
         }
 
         .credentials {
-            color: rgba(255, 255, 255, 0.9);
+            color: rgb(212, 175, 55);
             font-size: 16px;
-            font-weight: 400;
-            margin-top: 8px;
-            letter-spacing: 0.5px;
-            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            font-weight: 600;
+            letter-spacing: 1px;
+            font-family: 'Montserrat', sans-serif;
         }
 
         @media print {
@@ -166,16 +161,19 @@
     <div class="book-cover">
         <div class="top-section">
             <div class="category">Educational Leadership</div>
-            <h1 class="title">The Fourth Industrial Superintendent</h1>
+            <h1 class="title">
+                The Fourth<br>
+                Industrial<br>
+                <span class="title-accent">Superintendent</span>
+            </h1>
             <p class="subtitle">Leading Schools Beyond the 21st Century into the Age of AI</p>
-            <div class="edition">2025 Edition</div>
+            <div class="edition">2025 EDITION</div>
         </div>
 
         <div class="middle-section">
-            <div class="icon-container">
-                <div class="icon">🎓</div>
-            </div>
+            <div class="divider"></div>
             <p class="tagline">Strategic Leadership for the AI-Powered Future of Education</p>
+            <div class="divider"></div>
         </div>
 
         <div class="bottom-section">
