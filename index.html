@@ -3,10 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0A0E27">
+    <meta name="description" content="The Fourth Industrial Superintendent - A comprehensive guide for superintendents navigating the Fourth Industrial Revolution with AI-powered strategies.">
+    <link rel="manifest" href="/manifest.json">
     <title>The Fourth Industrial Superintendent - Dr. Marie Martin</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="dns-prefetch" href="https://buy.stripe.com">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" as="style">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -49,6 +54,7 @@
             background: linear-gradient(135deg, #0A0E27 0%, #1a1f3a 100%);
             position: relative;
             overflow: hidden;
+            contain: layout style paint;
         }
 
         .left-panel::before {
@@ -59,12 +65,12 @@
             width: 200%;
             height: 200%;
             background: radial-gradient(circle, rgba(0, 102, 255, 0.1) 0%, transparent 70%);
-            animation: pulse 8s ease-in-out infinite;
+            animation: fadeIn 1.5s ease-out forwards;
         }
 
-        @keyframes pulse {
-            0%, 100% { transform: scale(1); opacity: 0.5; }
-            50% { transform: scale(1.1); opacity: 0.8; }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.95); }
+            to { opacity: 0.5; transform: scale(1); }
         }
 
         .book-container {
@@ -83,15 +89,22 @@
             justify-content: space-between;
             margin-bottom: 1.5rem;
             transition: transform 0.3s ease;
+            animation: slideInLeft 0.8s ease-out 0.2s backwards;
+            will-change: transform;
         }
 
         .book-container:hover {
             transform: translateY(-8px) rotateY(5deg);
         }
 
+        @keyframes slideInLeft {
+            from { opacity: 0; transform: translateX(-30px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
         .book-title {
             font-size: 1.6rem;
-            font-weight: 800;
+            font-weight: 700;
             line-height: 1.1;
             letter-spacing: -0.02em;
         }
@@ -99,7 +112,7 @@
         .book-subtitle {
             font-size: 0.8rem;
             opacity: 0.9;
-            font-weight: 300;
+            font-weight: 400;
             margin-top: 0.4rem;
         }
 
@@ -114,6 +127,7 @@
             gap: 1.5rem;
             margin-top: 1rem;
             z-index: 2;
+            animation: fadeInUp 0.8s ease-out 0.5s backwards;
         }
 
         .stat {
@@ -143,6 +157,25 @@
             gap: 1.2rem;
             position: relative;
             overflow: hidden;
+            contain: layout style paint;
+        }
+
+        .right-panel > * {
+            animation: fadeInUp 0.8s ease-out backwards;
+        }
+
+        .right-panel > *:nth-child(1) { animation-delay: 0.1s; }
+        .right-panel > *:nth-child(2) { animation-delay: 0.2s; }
+        .right-panel > *:nth-child(3) { animation-delay: 0.3s; }
+        .right-panel > *:nth-child(4) { animation-delay: 0.4s; }
+        .right-panel > *:nth-child(5) { animation-delay: 0.5s; }
+        .right-panel > *:nth-child(6) { animation-delay: 0.6s; }
+        .right-panel > *:nth-child(7) { animation-delay: 0.7s; }
+        .right-panel > *:nth-child(8) { animation-delay: 0.8s; }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
         }
 
         .badge {
@@ -161,7 +194,7 @@
 
         h1 {
             font-size: 2.8rem;
-            font-weight: 800;
+            font-weight: 700;
             line-height: 1.1;
             letter-spacing: -0.02em;
             margin: 0;
@@ -178,7 +211,7 @@
             font-size: 0.95rem;
             line-height: 1.5;
             opacity: 0.8;
-            font-weight: 300;
+            font-weight: 400;
             max-width: 550px;
         }
 
@@ -295,9 +328,10 @@
             width: 350px;
             height: 350px;
             border-radius: 50%;
-            filter: blur(100px);
-            opacity: 0.25;
+            filter: blur(60px);
+            opacity: 0.2;
             pointer-events: none;
+            will-change: transform;
         }
 
         .glow-orb-1 {
@@ -433,5 +467,14 @@
             </div>
         </div>
     </div>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(reg => console.log('SW registered'))
+                    .catch(err => console.log('SW registration failed'));
+            });
+        }
+    </script>
 </body>
 </html>
