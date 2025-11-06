@@ -3,10 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lead your school district into the AI age. A comprehensive guide for superintendents navigating the Fourth Industrial Revolution with proven frameworks and ready-to-use templates.">
+    <meta name="keywords" content="educational leadership, AI in education, superintendent guide, K-12 AI transformation, educational technology, school district leadership">
+    <meta name="author" content="Dr. Marie Martin, EdD">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0A0E27">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://alexandria-s-design.github.io/The-Fourth-Industrial-Revolution-in-Education/">
+    <meta property="og:title" content="The Fourth Industrial Superintendent - Lead Your District Into the AI Age">
+    <meta property="og:description" content="A comprehensive guide for superintendents navigating the Fourth Industrial Revolution. Transform your district with AI-powered strategies, proven frameworks, and ready-to-use templates.">
+    <meta property="og:image" content="https://alexandria-s-design.github.io/The-Fourth-Industrial-Revolution-in-Education/book-cover.html">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://alexandria-s-design.github.io/The-Fourth-Industrial-Revolution-in-Education/">
+    <meta name="twitter:title" content="The Fourth Industrial Superintendent - Lead Your District Into the AI Age">
+    <meta name="twitter:description" content="A comprehensive guide for superintendents navigating the Fourth Industrial Revolution. Transform your district with AI-powered strategies, proven frameworks, and ready-to-use templates.">
+    <meta name="twitter:image" content="https://alexandria-s-design.github.io/The-Fourth-Industrial-Revolution-in-Education/book-cover.html">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://alexandria-s-design.github.io/The-Fourth-Industrial-Revolution-in-Education/">
+
+    <!-- Favicon and Web Manifest -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="favicon.svg">
+
     <title>The Fourth Industrial Superintendent - Dr. Marie Martin</title>
+
+    <!-- Performance: DNS Prefetch and Preconnect -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://buy.stripe.com">
+
+    <!-- Fonts with display=swap for better performance -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Book",
+      "name": "The Fourth Industrial Superintendent: Leading Schools Into the AI Age",
+      "author": {
+        "@type": "Person",
+        "name": "Dr. Marie Martin",
+        "jobTitle": "EdD, Educational Leadership Consultant",
+        "description": "25+ Years Educational Leadership Experience"
+      },
+      "description": "A comprehensive guide for superintendents navigating the Fourth Industrial Revolution. Transform your district with AI-powered strategies, proven frameworks, and ready-to-use templates.",
+      "numberOfPages": "250",
+      "inLanguage": "en-US",
+      "bookEdition": "2025 Edition",
+      "offers": {
+        "@type": "Offer",
+        "price": "47.00",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "url": "https://buy.stripe.com/6oU00igQofh02d89qR57W01"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Alexandria's Design"
+      }
+    }
+    </script>
     <style>
         * {
             margin: 0;
@@ -289,6 +352,22 @@
             opacity: 0.6;
         }
 
+        /* Skip link for accessibility */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--primary-blue);
+            color: white;
+            padding: 8px;
+            text-decoration: none;
+            z-index: 100;
+        }
+
+        .skip-link:focus {
+            top: 0;
+        }
+
         /* Decorative Elements */
         .glow-orb {
             position: absolute;
@@ -335,9 +414,12 @@
     </style>
 </head>
 <body>
+    <!-- Skip to main content for screen readers -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <div class="container">
         <!-- Left Panel -->
-        <div class="left-panel">
+        <aside class="left-panel" aria-label="Book information">
             <div class="book-container">
                 <div>
                     <div style="font-size: 0.65rem; opacity: 0.8; letter-spacing: 0.2em; margin-bottom: 1.2rem;">EDUCATIONAL LEADERSHIP</div>
@@ -368,9 +450,9 @@
         </div>
 
         <!-- Right Panel -->
-        <div class="right-panel">
-            <div class="glow-orb glow-orb-1"></div>
-            <div class="glow-orb glow-orb-2"></div>
+        <main class="right-panel" id="main-content">
+            <div class="glow-orb glow-orb-1" aria-hidden="true"></div>
+            <div class="glow-orb glow-orb-2" aria-hidden="true"></div>
 
             <div class="badge">2025 Edition</div>
 
@@ -410,28 +492,59 @@
                 </div>
             </div>
 
-            <div class="cta-container">
-                <a href="https://buy.stripe.com/6oU00igQofh02d89qR57W01" target="_blank" class="btn btn-primary">
+            <nav class="cta-container" aria-label="Purchase options">
+                <a href="https://buy.stripe.com/6oU00igQofh02d89qR57W01" target="_blank" rel="noopener noreferrer" class="btn btn-primary" aria-label="Purchase the book for $47">
                     Get the Book
-                    <span>→</span>
+                    <span aria-hidden="true">→</span>
                 </a>
-                <a href="https://buy.stripe.com/3cI5kCeIg4Cm4lg5aB57W02" target="_blank" class="btn btn-secondary">
+                <a href="https://buy.stripe.com/3cI5kCeIg4Cm4lg5aB57W02" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" aria-label="Subscribe to monthly academy for $97 per month">
                     Subscribe — $97/mo
                 </a>
-            </div>
+            </nav>
 
             <div class="price">
                 $47 one-time • $97/month • Cancel anytime
             </div>
 
             <div class="author-tag">
-                <div class="author-avatar">👩‍🎓</div>
+                <div class="author-avatar" role="img" aria-label="Author avatar">👩‍🎓</div>
                 <div class="author-info">
                     <div class="author-name">Dr. Marie Martin, EdD</div>
                     <div class="author-title">Alexandria's Design</div>
                 </div>
             </div>
-        </div>
+        </main>
     </div>
+
+    <!-- Analytics Event Tracking -->
+    <script>
+        // Track CTA clicks
+        document.querySelectorAll('.btn').forEach(function(btn) {
+            btn.addEventListener('click', function(e) {
+                var btnText = this.textContent.trim();
+                var destination = this.href;
+
+                // Log analytics event (placeholder for actual analytics integration)
+                console.log('CTA Click:', {
+                    button: btnText,
+                    destination: destination,
+                    timestamp: new Date().toISOString()
+                });
+
+                // If you're using Google Analytics:
+                // gtag('event', 'click', {
+                //     'event_category': 'CTA',
+                //     'event_label': btnText,
+                //     'value': btnText.includes('Book') ? 47 : 97
+                // });
+            });
+        });
+
+        // Track page load time
+        window.addEventListener('load', function() {
+            var loadTime = performance.now();
+            console.log('Page Load Time:', loadTime.toFixed(2) + 'ms');
+        });
+    </script>
 </body>
 </html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>404 - Page Not Found | The Fourth Industrial Superintendent</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-blue: #0066FF;
+            --dark-bg: #0A0E27;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--dark-bg);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 600px;
+        }
+
+        .error-code {
+            font-size: 8rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--primary-blue) 0%, #FF6B6B 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1;
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        p {
+            font-size: 1.1rem;
+            opacity: 0.8;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: linear-gradient(135deg, var(--primary-blue) 0%, #0052CC 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 20px rgba(0, 102, 255, 0.3);
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 30px rgba(0, 102, 255, 0.4);
+        }
+
+        .links {
+            margin-top: 2rem;
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .link {
+            color: var(--primary-blue);
+            text-decoration: none;
+            opacity: 0.8;
+            transition: opacity 0.3s ease;
+        }
+
+        .link:hover {
+            opacity: 1;
+        }
+
+        @media (max-width: 768px) {
+            .error-code {
+                font-size: 5rem;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <div class="error-code" role="img" aria-label="Error 404">404</div>
+        <h1>Page Not Found</h1>
+        <p>
+            The page you're looking for seems to have wandered off into the Fourth Industrial Revolution.
+            Let's get you back on track.
+        </p>
+        <a href="/The-Fourth-Industrial-Revolution-in-Education/" class="btn">Return to Home</a>
+
+        <nav class="links" aria-label="Quick links">
+            <a href="/The-Fourth-Industrial-Revolution-in-Education/book-cover.html" class="link">View Book Cover</a>
+            <span style="opacity: 0.3;">•</span>
+            <a href="https://buy.stripe.com/6oU00igQofh02d89qR57W01" class="link" target="_blank" rel="noopener noreferrer">Get the Book</a>
+        </nav>
+    </main>
+
+    <script>
+        // Log 404 for analytics
+        console.log('404 Error:', {
+            path: window.location.pathname,
+            referrer: document.referrer,
+            timestamp: new Date().toISOString()
+        });
+
+        // Optional: Report to analytics
+        // if (typeof gtag !== 'undefined') {
+        //     gtag('event', 'exception', {
+        //         'description': '404: ' + window.location.pathname,
+        //         'fatal': false
+        //     });
+        // }
+    </script>
+</body>
+</html>

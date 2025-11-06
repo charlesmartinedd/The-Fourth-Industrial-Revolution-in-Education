@@ -1,0 +1,20 @@
+{
+  "name": "The Fourth Industrial Superintendent",
+  "short_name": "4IR Superintendent",
+  "description": "Lead your school district into the AI age. A comprehensive guide for superintendents navigating the Fourth Industrial Revolution.",
+  "start_url": "/The-Fourth-Industrial-Revolution-in-Education/",
+  "display": "standalone",
+  "background_color": "#0A0E27",
+  "theme_color": "#0066FF",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["education", "books", "business"],
+  "lang": "en-US"
+}

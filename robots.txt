@@ -1,0 +1,11 @@
+# Robots.txt for The Fourth Industrial Superintendent
+# Allow all bots to access all content
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://alexandria-s-design.github.io/The-Fourth-Industrial-Revolution-in-Education/sitemap.xml
+
+# Crawl-delay (optional)
+Crawl-delay: 1
